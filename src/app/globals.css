@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #002147;
+  --primary: #002147;
+  --accent: #FFC000;
+  --surface: #F9FAFB;
+  --border: #E5E7EB;
+  --rule: #002147;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-accent: var(--accent);
+  --color-surface: var(--surface);
+  --color-border: var(--border);
+  --color-rule: var(--rule);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* 
+  Banned classes enforced via comments:
+  - DO NOT USE rounded-* classes
+  - DO NOT USE shadow-* classes
+  - DO NOT USE bg-gradient-* classes
+  - DO NOT USE backdrop-blur-* classes
+*/
